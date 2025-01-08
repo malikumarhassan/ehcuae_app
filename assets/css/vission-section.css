@@ -1,0 +1,164 @@
+.section22 {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem 10%;
+    position: relative;
+    overflow: hidden;
+}
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: .3;
+}
+
+.video-background video {
+    object-fit: cover; /* Ensures the video covers the entire area */
+    width: 100%;
+    height: 100%;
+}
+.vision .image-container22{
+    clip-path: polygon(59% 0, 100% 0, 55% 100%, 1% 100%, 0 0);
+}
+.mission .image-container22{
+    clip-path: polygon(59% 0, 100% 0, 100% 100%, 55% 100%, 0 0);
+}
+.values .image-container22{
+    clip-path: polygon(59% 0, 100% 0, 55% 100%, 1% 100%, 0 0);
+}
+.content22 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.content22.reverse {
+    direction: rtl;
+}
+
+.content22.reverse .text-content {
+    direction: ltr;
+}
+
+.image-container22 {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+}
+
+.image-container22 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.1);
+}
+
+.image-overlay22 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0,0,0,0.4), transparent);
+}
+
+.text-content22 {
+    padding: 2rem;
+}
+
+.section22 h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.text-content22 p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    max-width: 500px;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.highlight-text22 {
+    /* color: #4a9eff; */
+    font-weight: 600;
+}
+
+.particles22 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.particle22 {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.507);
+    border-radius: 50%;
+}
+.dark .particle22 {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.507);
+    border-radius: 50%;
+}
+
+.line-drawing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.1;
+}
+
+.line-drawing path {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1;
+}
+
+@media (max-width: 768px) {
+    .content22 {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .content22.reverse { 
+        direction: ltr;
+    }
+
+    .section22 h2 {
+        font-size: 2rem;
+    }
+
+    .section22 {
+        padding: 0rem 5%;
+    }
+    .text-content22 p {
+        font-size: 1rem;
+    }
+    .text-content22 {
+        padding: 0rem;
+    }
+    .image-container22 img {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        transform: scale(1.1);
+    }
+    
+}

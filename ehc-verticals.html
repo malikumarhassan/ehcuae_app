@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ehcuae">
+
+  <title>Ehcuae</title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="assets/imgs/logo/ehc-Black-3D.png">
+
+
+
+
+
+  <!-- All CSS files -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/progressbar.css">
+  <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/master-contact.css">
+  <link rel="stylesheet" href="assets/css/left-fixed-header.css">
+  <link rel="stylesheet" href="assets/css/custom-map.css">
+  <link rel="stylesheet" href="assets/css/master-ehc-verticals.css">
+
+</head>
+
+
+<body class="font-heading-beatricetrial-regular-2 dark">
+
+  <div id="preloader">
+    <div id="container" class="container-preloader">
+      <div class="animation-preloader">
+        <!-- <div class="spinner"></div> -->
+        <img loading="lazy" src="assets/gif/simple-logo-loader.gif" alt="site-logo">
+        <div class="txt-loading">
+          <!-- <span data-text="E" class="characters">E</span>
+          <span data-text="H" class="characters">H</span>
+          <span data-text="C" class="characters">C</span>
+          <span data-text="U" class="characters">U</span>
+          <span data-text="A" class="characters">A</span>
+          <span data-text="E" class="characters">E</span> -->
+        </div>
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+  </div>
+
+  <!-- Cursor Animation -->
+  <div class="cursor1"></div>
+  <div class="cursor2"></div>
+
+  <!-- Sroll to top -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+  </div>
+
+  <!-- Switcher Area Start -->
+
+  <!-- Switcher Area End -->
+
+  <!-- offcanvas start  -->
+  <div class="offcanvas-3__area">
+    <div class="offcanvas-3__inner">
+      <div class="offcanvas-3__meta-wrapper">
+        <div class="">
+          <button id="close_offcanvas" class="close-button close-offcanvas" onclick="hideCanvas3()">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="">
+          <div class="offcanvas-3__meta mb-145 d-none d-md-block">
+            <ul>
+              <li><a href="tel:+2-352698102" class="unnerline"><u>+2-352 698 102</u></a></li>
+              <li><a href="mailto:contact@me.com">contact@me.com</a></li>
+              <li><a href="">27 Division St, <br>
+                  New York, NY 10002, USA</a></li>
+            </ul>
+          </div>
+          <div class="offcanvas-3__social d-none d-md-block">
+            <p class="title">Follow Me</p>
+            <div class="offcanvas-3__social-links">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-dribbble"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-3__menu-wrapper">
+        <nav class="nav-menu offcanvas-3__menu">
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="services.html">services</a></li>
+            <li><a href="service-details.html">service details</a></li>
+            <li><a href="works.html">projects</a></li>
+            <li><a href="work-details.html">project details</a></li>
+            <li><a href="team.html">team</a></li>
+            <li><a href="team-details.html">team details</a></li>
+            <li><a href="career.html">career</a></li>
+            <li><a href="career-details.html">career details</a></li>
+            <li><a href="faq.html">faq</a></li>
+            <li><a href="404.html">404 page</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="blog-details.html">blog details</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- offcanvas end  -->
+
+
+  <!-- search modal start -->
+  <div class="modal fade" id="search-template" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="search-template" aria-hidden="true">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form action="#" class="form-search">
+            <input type="text" placeholder="Search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- search modal end -->
+
+  <!-- Sidenav area start -->
+  <!-- custom nav -->
+  <div class="custom-nav-header">
+    <!-- <img loading="lazy" src="assets/imgs/logo/EHC-Black-trans.png" alt="Ehcuae" class="logo"> -->
+    <div class="header-icons">
+      <button class="icon-btn toggle-menu">
+        <i class="fas fa-bars"></i> <!-- Change this icon dynamically -->
+      </button>
+    </div>
+  </div>
+  <div class="menu-container">
+    <div class="top-sided-logo">
+      <img loading="lazy" src="assets/imgs/logo/EHC-Black-trans.png" alt="site-logo">
+    </div>
+    <nav class="nav-menu">
+      <a href="home.html" class="nav-item">Home</a>
+      <a href="about.html" class="nav-item">Who We Are</a>
+      <a href="ehc-verticals.html" class="nav-item">Ehc Verticals</a>
+      <a href="blog-details.html" class="nav-item">Blogs</a>
+      <a href="news.html" class="nav-item">News</a>
+      <a href="contact.html" class="nav-item">Contact Us</a>
+    </nav>
+    <ul class="menu-social-links">
+      <li><a href="https://www.facebook.com/EHCInvestment/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+      </li>
+      <li><a href="https://www.instagram.com/ehc.investment/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </li>
+      <li><a href="https://www.linkedin.com/company/ehc-investment/" target="_blank"><i
+            class="fa-brands fa-linkedin"></i></a></li>
+    </ul>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleMenuButton = document.querySelector('.toggle-menu');
+      const menuContainer = document.querySelector('.menu-container');
+      const navItems = document.querySelectorAll('.nav-item');
+
+      // State to track whether the menu is open or closed
+      let menuOpen = false;
+
+      toggleMenuButton.addEventListener('click', () => {
+        const tl = gsap.timeline();
+
+        if (!menuOpen) {
+          // Open menu animation
+          tl.to(menuContainer, {
+            x: '0%',
+            duration: 0.5,
+            ease: 'power3.out'
+          })
+            .to(navItems, {
+              opacity: 0.5,
+              x: 0,
+              duration: 0.5,
+              stagger: 0.05,
+              ease: 'power3.out'
+            });
+          toggleMenuButton.innerHTML = `<i class="fas fa-times"></i>`; // Change to close icon
+        } else {
+          // Close menu animation
+          tl.to(navItems, {
+            opacity: 0,
+            x: -30,
+            duration: 0.5,
+            stagger: 0.05,
+            ease: 'power3.in'
+          })
+            .to(menuContainer, {
+              x: '-100%',
+              duration: 0.5,
+              ease: 'power3.in'
+            });
+          toggleMenuButton.innerHTML = `<i class="fas fa-bars"></i>`; // Change back to open icon
+        }
+
+        // Toggle the menu state
+        menuOpen = !menuOpen;
+      });
+    });
+  </script>
+
+  <!-- custom nav end -->
+
+
+  <div class="has-smooth" id="has_smooth"></div>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <div class="body-wrapper body-corporate-agency">
+
+        <!-- overlay switcher close  -->
+        <div class="overlay-switcher-close"></div>
+
+        <main>
+
+          <!-- hero area start  -->
+          <section class="hero-area">
+            <div class="image-wrapper overflow-hidden">
+              <h1 class="image-title section-title large has_fade_anim" style="z-index: 1;">EHC Verticals</h1>
+
+            </div>
+          </section>
+
+          <!-- hero area end  -->
+
+          <!-- verticals area start  -->
+          <div class="ehc-nav-sections-container">
+            <nav class="nav-slided-container">
+              <div class="nav-slider-items">
+                <div class="nav-slider-item active" href="#energy" data-index="0">Energy</div>
+                <div class="nav-slider-item" href="#infrastructure" data-index="1">Infrastructure</div>
+                <div class="nav-slider-item" href="#safety" data-index="2">Safety</div>
+                <div class="nav-slider-item" href="#technology" data-index="3">Technology</div>
+              </div>
+              <div class="slider"></div>
+            </nav>
+
+            <!-- Energy Section -->
+            <section class="ehc-section" id="energy">
+              <div class="ehc-section-content">
+                <div class="ehc-section-header">
+                  <h1 class="ehc-section-title">Energy</h1>
+                </div>
+                <p class="ehc-section-description">
+                  With over 35 years of expertise, EHC Energy is dedicated to having investments that advancing the
+                  UAE's energy sector by prioritizing sustainability and integrating cutting-edge technologies.
+
+                </p>
+                <div class="ehc-navigation">
+                  <button class="ehc-nav-button ehc-prev">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M15 18l-6-6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <button class="ehc-nav-button ehc-next">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M9 18l6-6-6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+              
+                </div>
+              </div>
+              <div class="ehc-carousel-container">
+                <div class="ehc-carousel">
+                  <div class="ehc-carousel-item">
+                    <div class="btn-wrapper has_fade_anim" data-ease="bounce">
+                      <a href="http://www.alfanargas.com" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+                        <span data-text="Explore">Explore</span></a>
+                    </div>
+                    <img loading="lazy" src="assets/imgs/gallery/ver-d-e-1.jpg" alt="PAL Cooling">
+                    <div class="ehc-carousel-item-content">
+                      <h3 class="ehc-carousel-item-title"><!-- Al Fanar Gas -->
+                        <img loading="lazy" src="assets/imgs/logo/AL-Fanar.png" style="width: 80px !important;" alt="">
+                      </h3>
+                    </div>
+
+                  </div>
+                  <div class="ehc-carousel-item">
+                    <div class="btn-wrapper has_fade_anim" data-ease="bounce">
+                      <a href="https://www.emiratesig.com" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+                        <span data-text="Explore">Explore</span></a>
+                    </div>
+                    <img loading="lazy" src="assets/imgs/gallery/ver-d-e-5.jpg" alt="PAL Cooling">
+                    <div class="ehc-carousel-item-content">
+                      <h3 class="ehc-carousel-item-title"><!-- Al Fanar Gas -->
+                        <img loading="lazy" src="assets/imgs/logo/eig.png" style="width: 250px !important;" alt="">
+                      </h3>
+                    </div>
+
+                  </div>
+                  <div class="ehc-carousel-item">
+                    <div class="btn-wrapper has_fade_anim" data-ease="bounce">
+                      <a href="http://www.alfanargas.com" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+                        <span data-text="Explore">Explore</span></a>
+                    </div>
+                    <img loading="lazy" src="assets/imgs/gallery/ver-d-e-2.jpg" alt="Kalyon Enerji">
+                    <div class="ehc-carousel-item-content">
+                      <h3 class="ehc-carousel-item-title"><!-- Al Fanar Gas -->
+                        <img loading="lazy" src="assets/imgs/logo/gp logo.png" style="width: 120px !important;" alt="">
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="ehc-carousel-item">
+                    <div class="btn-wrapper has_fade_anim" data-ease="bounce">
+                      <a href="http://www.alfanargas.com" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+                        <span data-text="Explore">Explore</span></a>
+                    </div>
+                    <img loading="lazy" src="assets/imgs/gallery/ver-d-e-8.jpg" alt="Energy Solutions">
+                    <div class="ehc-carousel-item-content">
+                      <h3 class="ehc-carousel-item-title"><!-- Al Fanar Gas -->
+                        <img loading="lazy" src="assets/imgs/logo/Mayar Gas logo.png" style="width: 120px !important;" alt="">
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="ehc-carousel-item">
+                    <div class="btn-wrapper has_fade_anim" data-ease="bounce">
+                      <a href="http://www.alfanargas.com" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+                        <span data-text="Explore">Explore</span></a>
+                    </div>
+                    <img loading="lazy" src="assets/imgs/gallery/ver-d-e-6.jpg" alt="Energy Solutions">
+                    <div class="ehc-carousel-item-content">
+                      <h3 class="ehc-carousel-item-title"><!-- Al Fanar Gas -->
+                        <img loading="lazy" src="assets/imgs/logo/YAS NATIONAL GAS.png" style="width: 150px !important;" alt="">
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="ehc-carousel-item">
+                    <div class="btn-wrapper has_fade_anim" data-ease="bounce">
+                      <a href="http://www.alfanargas.com" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+                        <span data-text="Explore">Explore</span></a>
+                    </div>
+                    <img loading="lazy" src="assets/imgs/gallery/ver-d-e-7.jpg" alt="Energy Solutions">
+                    <div class="ehc-carousel-item-content">
+                      <h3 class="ehc-carousel-item-title"><!-- Al Fanar Gas -->
+                        <img loading="lazy" src="assets/imgs/logo/Belghalem Gas copy 16.png" style="width: 150px !important;" alt="">
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="ehc-section" id="infrastructure">
+              <div class="ehc-section-content">
+                <div class="ehc-section-header">
+                  <h2 class="ehc-section-title">Infrastructure</h2>
+                </div>
+                <p class="ehc-section-description">
+                  EHC Infrastructure is a key division of EHC Investments, focusing on delivering comprehensive
+                  infrastructure solutions, that aligned with global best practices and UAE vision.
+                </p>
+                <!-- <div class="ehc-stats-grid">
+                  <div class="ehc-stat-item">
+                    <div class="ehc-stat-label">On-Going Projects</div>
+                    <div class="ehc-stat-number" style="color: #333399;">275+ Millions AED</div>
+                  </div>
+                  <div class="ehc-stat-item">
+                    <div class="ehc-stat-label">Pipeline Projects</div>
+                    <div class="ehc-stat-number" style="color: #333399;">200+ Millions AED</div>
+                  </div>
+                </div> -->
+                <div class="ehc-navigation">
+                  <button class="ehc-nav-button ehc-prev">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M15 18l-6-6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <button class="ehc-nav-button ehc-next">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M9 18l6-6-6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <!-- <div class="btn-wrapper has_fade_anim" data-ease="bounce">
+                    <a href="https://www.kad.ae/" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+                      <span data-text="Explore">Explore</span></a>
+                  </div> -->
+                </div>
+              </div>
+              <div class="ehc-carousel-container">
+                <div class="ehc-carousel">
+                  <div class="ehc-carousel-item">
+                    <div class="btn-wrapper has_fade_anim" data-ease="bounce">
+                      <a href="https://www.kad.ae/" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+                        <span data-text="Explore">Explore</span></a>
+                    </div>
+                    <img loading="lazy" src="assets/imgs/gallery/ver-d-i-1.jpg" style="object-position: left;"
+                      alt="PAL Cooling">
+                    <div class="ehc-carousel-item-content">
+                      <h3 class="ehc-carousel-item-title"><!-- KAD -->
+                        <img loading="lazy" src="assets/imgs/logo/KAD.png" alt="" style="width: 150px;">
+                      </h3>
+                    </div>
+
+                  </div>
+
+                  <div class="ehc-carousel-item">
+                    <div class="btn-wrapper has_fade_anim" data-ease="bounce">
+                      <a href="https://www.kad.ae/" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+                        <span data-text="Explore">Explore</span></a>
+                    </div>
+                    <img loading="lazy" src="assets/imgs/gallery/ver-d-i-3.jpg" alt="Energy Solutions">
+                    <div class="ehc-carousel-item-content">
+                      <h3 class="ehc-carousel-item-title"><!-- KAD -->
+                        <img loading="lazy" src="assets/imgs/logo/KAD.png" alt="" style="width: 150px;">
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="ehc-carousel-item">
+                    <div class="btn-wrapper has_fade_anim" data-ease="bounce">
+                      <a href="https://www.kad.ae/" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+                        <span data-text="Explore">Explore</span></a>
+                    </div>
+                    <img loading="lazy" src="assets/imgs/gallery/ver-d-i-2.jpg" alt="Kalyon Enerji">
+                    <div class="ehc-carousel-item-content">
+                      <h3 class="ehc-carousel-item-title"><!-- KAD -->
+                        <img loading="lazy" src="assets/imgs/logo/KAD.png" alt="" style="width: 150px;">
+                      </h3>
+                    </div>
+                  </div>
+                  <!-- <div class="ehc-carousel-item">
+                    <div class="btn-wrapper has_fade_anim" data-ease="bounce">
+                      <a href="http://www.alfanargas.com" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+                        <span data-text="Explore">Explore</span></a>
+                    </div>
+                  <img loading="lazy" src="assets/imgs/gallery/ver-d-e-4.jpg" alt="Energy Solutions">
+                  <div class="ehc-carousel-item-content">
+                    <h3 class="ehc-carousel-item-title">KAD
+                      <img loading="lazy" src="assets/imgs/logo/KAD.png" alt="" style="width: 150px;">
+                    </h3>
+                  </div>
+                </div> -->
+                </div>
+              </div>
+            </section>
+
+            <section class="ehc-section" id="safety">
+              <div class="ehc-section-content">
+                <div class="ehc-section-header">
+                  <h2 class="ehc-section-title">Safety</h2>
+                </div>
+                <p class="ehc-section-description">
+                  EHC Safety is committed to elevating safety standards across its companies, leveraging the latest
+                  technologies to protect the UAE while actively contributing to the realization of the nation's
+                  visionary goals.
+                </p>
+                <!-- <div class="ehc-location-info">
+                  <h3 class="ehc-subtitle">United Arab Emirates</h3>
+                  <div class="ehc-info-block">
+                    <h4 class="ehc-info-title" style="color: #ff6b00;">AGPS (TAQA Subsidiary)</h4>
+                    <p class="ehc-info-text">Al Taweelah - Shared Facility Co. (SFCo)</p>
+                  </div>
+                  <div class="ehc-info-block">
+                    <h4 class="ehc-info-title" style="color: #ff6b00;">AD Ports</h4>
+                    <p class="ehc-info-text">SPV has been created with ADPORTS for Fire and safety maintenance
+                      management</p>
+                  </div>
+                </div> -->
+                <div class="ehc-navigation">
+                  <button class="ehc-nav-button ehc-prev">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M15 18l-6-6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <button class="ehc-nav-button ehc-next">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M9 18l6-6-6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <!-- <div class="btn-wrapper has_fade_anim" data-ease="bounce">
+                    <a href="https://www.fooj.ae/#Home" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+                      <span data-text="Explore">Explore</span></a>
+                  </div> -->
+                </div>
+              </div>
+              <div class="ehc-carousel-container">
+                <div class="ehc-carousel">
+                  <div class="ehc-carousel-item">
+                    <div class="btn-wrapper has_fade_anim" data-ease="bounce">
+                    <a href="https://www.fooj.ae/#Home" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+                      <span data-text="Explore">Explore</span></a>
+                  </div>
+                    <img loading="lazy" src="assets/imgs/gallery/ver-d-s-2.jpg" style="object-position: 0rem;"
+                      alt="Kalyon Enerji">
+                    <div class="ehc-carousel-item-content">
+                      <h3 class="ehc-carousel-item-title"><!-- FOOJ -->
+                        <img loading="lazy" src="assets/imgs/logo/fooj.png" alt="" style="width: 150px;">
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="ehc-carousel-item">
+                    <div class="btn-wrapper has_fade_anim" data-ease="bounce">
+                    <a href="https://www.fooj.ae/#Home" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+                      <span data-text="Explore">Explore</span></a>
+                  </div>
+                    <img loading="lazy" src="assets/imgs/gallery/ver-d-s-1.jpg" style="object-position: -25rem;"
+                      alt="PAL Cooling">
+                    <div class="ehc-carousel-item-content">
+                      <h3 class="ehc-carousel-item-title"><!-- FOOJ -->
+                        <img loading="lazy" src="assets/imgs/logo/fooj.png" alt="" style="width: 150px;">
+                      </h3>
+                    </div>
+
+                  </div>
+                  <div class="ehc-carousel-item">
+                    <div class="btn-wrapper has_fade_anim" data-ease="bounce">
+                    <a href="https://www.fooj.ae/#Home" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+                      <span data-text="Explore">Explore</span></a>
+                  </div>
+                    <img loading="lazy" src="assets/imgs/gallery/ver-d-s-3.jpg" style="object-position: 0rem;"
+                      alt="PAL Cooling">
+                    <div class="ehc-carousel-item-content">
+                      <h3 class="ehc-carousel-item-title"><!-- FOOJ -->
+                        <img loading="lazy" src="assets/imgs/logo/fooj.png" alt="" style="width: 150px;">
+                      </h3>
+                    </div>
+
+                  </div>
+                  <div class="ehc-carousel-item">
+                    <div class="btn-wrapper has_fade_anim" data-ease="bounce">
+                    <a href="https://www.fooj.ae/#Home" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+                      <span data-text="Explore">Explore</span></a>
+                  </div>
+                    <img loading="lazy" src="assets/imgs/gallery/ver-d-s-4.jpg" style="object-position: -25rem;"
+                      alt="PAL Cooling">
+                    <div class="ehc-carousel-item-content">
+                      <h3 class="ehc-carousel-item-title"><!-- FOOJ -->
+                        <img loading="lazy" src="assets/imgs/logo/fooj.png" alt="" style="width: 150px;">
+                      </h3>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="ehc-section" id="technology">
+              <div class="ehc-section-content">
+                <div class="ehc-section-header">
+                  <h2 class="ehc-section-title">Technology</h2>
+                </div>
+                <p class="ehc-section-description">
+                  EHC Technology specializes in innovative system integration, leveraging AI to enhance functionality,
+                  efficiency,
+                  and operational excellence across industries. By integrating advanced technology, ISI ensures improved
+                  performance, safety, and reliability for its client.
+                </p>
+                <!-- <div class="ehc-services-list">
+                  <h3 class="ehc-subtitle">Services</h3>
+                  <ul class="ehc-services">
+                    <li>System Integrations</li>
+                    <li>Alarm Terminal Equipment</li>
+                    <li>Control Systems</li>
+                    <li>Gas Detection Systems</li>
+                    <li>SCADA and PLC</li>
+                    <li>AI Capabilities Integration</li>
+                  </ul>
+                </div> -->
+                <div class="ehc-navigation">
+                  <button class="ehc-nav-button ehc-prev">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M15 18l-6-6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <button class="ehc-nav-button ehc-next">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M9 18l6-6-6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <!-- <div class="btn-wrapper has_fade_anim" data-ease="bounce">
+                    <a href="https://isiuae.com/" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+                      <span data-text="Explore">Explore</span></a>
+                  </div> -->
+                </div>
+              </div>
+              <div class="ehc-carousel-container">
+                <div class="ehc-carousel">
+                  <div class="ehc-carousel-item">
+                    <!-- <div class="btn-wrapper has_fade_anim" data-ease="bounce">
+                      <a href="https://isiuae.com/" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+                        <span data-text="Explore">Explore</span></a>
+                    </div> -- >
+                    <img loading="lazy" src="assets/imgs/gallery/ver-d-t-4.jpg" style="object-position: -10rem;"
+                      alt="PAL Cooling">
+                    <div class="ehc-carousel-item-content">
+                      <h3 class="ehc-carousel-item-title"><!-- International Systems Integration -->
+                        <img loading="lazy" src="assets/imgs/logo/nextg.png" alt="" style="width: 200px;">
+                      </h3>
+                    </div>
+
+                  </div>
+                  <div class="ehc-carousel-item">
+                    <div class="btn-wrapper has_fade_anim" data-ease="bounce">
+                      <a href="https://isiuae.com/" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+                        <span data-text="Explore">Explore</span></a>
+                    </div>
+                    <img loading="lazy" src="assets/imgs/gallery/ver-d-t-2.jpg" style="object-position: -17rem;"
+                      alt="Kalyon Enerji">
+                    <div class="ehc-carousel-item-content">
+                      <h3 class="ehc-carousel-item-title"><!-- International Systems Integration -->
+                        <img loading="lazy" src="assets/imgs/logo/isi.png" alt="" style="width: 150px;">
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="ehc-carousel-item">
+                    <div class="btn-wrapper has_fade_anim" data-ease="bounce">
+                      <a href="https://www.sonictech.ae" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+                        <span data-text="Explore">Explore</span></a>
+                    </div>
+                    <img loading="lazy" src="assets/imgs/gallery/ver-d-t-7.jpg" style="object-position: -21rem;"
+                      alt="PAL Cooling">
+                    <div class="ehc-carousel-item-content">
+                      <h3 class="ehc-carousel-item-title"><!-- International Systems Integration -->
+                        <img loading="lazy" src="assets/imgs/logo/sonic.png" alt="" style="width: 200px;">
+                      </h3>
+                    </div>
+
+                  </div>
+                  <div class="ehc-carousel-item">
+                    <!-- <div class="btn-wrapper has_fade_anim" data-ease="bounce">
+                      <a href="https://isiuae.com/" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+                        <span data-text="Explore">Explore</span></a>
+                    </div> -->
+                    <img loading="lazy" src="assets/imgs/gallery/ver-d-t-1.jpg" style="object-position: -23rem;"
+                      alt="PAL Cooling">
+                    <!-- <div class="ehc-carousel-item-content">
+                      <h3 class="ehc-carousel-item-title">
+                        <img loading="lazy" src="assets/imgs/logo/isi.png" alt="" style="width: 150px;">
+                      </h3>
+                    </div> -->
+
+                  </div>
+                  
+                </div>
+              </div>
+            </section>
+
+          </div>
+          <!-- verticals area end  -->
+
+        </main>
+
+        <!-- footer area start  -->
+        <div class="container-fluid p-0" style="position: relative;">
+          <footer class="footer-area">
+            <div class="container">
+              <div class="footer-area-inner">
+                <div class="footer-widget-wrapper">
+                  <div class="footer-logo">
+                    <a href="home.html"><img src="assets/imgs/logo/EHC-Black-trans.png" width="400" alt="site-logo"></a>
+                  </div>
+                  <p class="info-text">Enterprise Holding Company </p>
+                  <ul class="social-links">
+                    <li><a href="https://www.facebook.com/EHCInvestment/" target="_blank"><i
+                          class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/ehc.investment/" target="_blank"><i
+                          class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/ehc-investment/" target="_blank"><i
+                          class="fa-brands fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+
+                <div class="footer-widget-wrapper">
+                  <h2 class="title">Company</h2>
+                  <ul class="footer-nav-list">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="ehc-verticals.html">EHC Verticals</a></li>
+                  </ul>
+                </div>
+                <div class="footer-widget-wrapper">
+                  <h2 class="title">Insights</h2>
+                  <ul class="footer-nav-list">
+                    <li><a href="blog-details.html">Blogs</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="footer-widget-wrapper newsletter">
+                  <h2 class="title">Get in touch</h2>
+                  <div class="newsletter-text">
+                    <p class="text">Feel free to reach out if you want to collaborate with us, or simply have a chat.
+                    </p>
+                  </div>
+                  <spanaction="#" class="subscribe-form">info@ehcuae.com
+                    </span>
+                </div>
+                <!-- <div class="side-mounted-image" style="right:-98px;position: absolute;top: 1px;opacity: 0.2;">
+                  <img src="assets/imgs/gallery/3d-logo-with-bubbles.png" alt="">
+                </div> -->
+              </div>
+              <div class="footer-area-inner mobile">
+                <div class="footer-widget-wrapper">
+                  <div class="footer-logo">
+                    <a href="home.html"><img src="assets/imgs/logo/EHC-Black-trans.png" width="400" alt="site-logo"></a>
+                  </div>
+                  <p class="info-text">Enterprise Holding Company </p>
+                  <ul class="social-links">
+                    <li><a href="https://www.facebook.com/EHCInvestment/" target="_blank"><i
+                          class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/ehc.investment/" target="_blank"><i
+                          class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/ehc-investment/" target="_blank"><i
+                          class="fa-brands fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+                <div style="display: flex;flex-direction: row; justify-content: space-between;margin: 50px 0px;">
+
+                  <div class="footer-widget-wrapper">
+                    <h2 class="title">Company</h2>
+                    <ul class="footer-nav-list">
+                      <li><a href="home.html">Home</a></li>
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="ehc-verticals.html">EHC Verticals</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-widget-wrapper">
+                    <h2 class="title">Insights</h2>
+                    <ul class="footer-nav-list">
+                      <li><a href="blog-details.html">Blogs</a></li>
+                      <li><a href="news.html">News</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer-widget-wrapper newsletter">
+                  <h2 class="title">Get in touch</h2>
+                  <div class="newsletter-text">
+                    <p class="text">Feel free to reach out if you want to collaborate with us, or simply have a chat.
+                    </p>
+                    <span>info@ehcuae.com</span>
+                  </div>
+                  <form action="#" class="subscribe-form">
+                    <p></p>
+                  </form>
+                </div>
+                <!-- <div class="side-mounted-image" style="right:-98px;position: absolute;top: 1px;opacity: 0.2;">
+                  <img src="assets/imgs/gallery/3d-logo-with-bubbles.png" alt="">
+                </div> -->
+              </div>
+              <div class="copyright-area">
+                <div class="container">
+                  <div class="copyright-area-inner">
+                    <div class="copyright-text">
+                      <p class="text">© 2024-25 <a href="home.html" target="_blank">Ehcuae</a>
+                        company</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <!-- footer area end  -->
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- All JS files -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/progressbar.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollSmoother.min.js"></script>
+  <script src="assets/js/ScrollToPlugin.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/SplitText.min.js"></script>
+  <script src="assets/js/jquery.meanmenu.min.js"></script>
+  <script src="assets/js/backToTop.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/error-handling.js"></script>
+  <script src="assets/js/offcanvas.js"></script>
+
+  <!-- <script>
+    // energy script
+    // testimonial slider
+    if (('.testimonial-slider').length) {
+      var testimonial_slider = new Swiper(".testimonial-slider", {
+        loop: false,
+        slidesPerView: 1,
+        spaceBetween: 60,
+        speed: 1800,
+        watchSlidesProgress: true,
+        navigation: {
+          prevEl: ".testimonial-button-prev",
+          nextEl: ".testimonial-button-next",
+        },
+      });
+    }
+
+
+    // client slider 
+    if ('.client-slider-active') {
+      var client_slider_active = new Swiper(".client-slider-active", {
+        slidesPerView: 'auto',
+        loop: true,
+        autoplay: true,
+        spaceBetween: 130,
+        speed: 3000,
+        autoplay: {
+          delay: 1,
+        },
+      });
+    }
+
+  </script> -->
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Carousel functionality
+    document.querySelectorAll('.ehc-carousel-container').forEach((container, index) => {
+      const carousel = container.querySelector('.ehc-carousel');
+      const items = carousel.querySelectorAll('.ehc-carousel-item');
+      const prevBtn = container.previousElementSibling.querySelector('.ehc-prev');
+      const nextBtn = container.previousElementSibling.querySelector('.ehc-next');
+      let position = 0;
+
+      function updateCarousel() {
+        gsap.to(carousel, {
+          duration: 0.5,
+          x: -position * (items[0].offsetWidth + 20),
+          ease: "power2.out"
+        });
+      }
+
+      prevBtn.addEventListener('click', () => {
+        position = (position - 1 + items.length) % items.length;
+        updateCarousel();
+      });
+
+      nextBtn.addEventListener('click', () => {
+        position = (position + 1) % items.length;
+        updateCarousel();
+      });
+
+      // Initialize GSAP timeline for this carousel
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: container,
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse"
+        }
+      });
+
+      // Add animations
+      tl.from(items, {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        stagger: 0.2
+      });
+
+      // Responsive handling
+      window.addEventListener('resize', () => {
+        updateCarousel();
+      });
+    });
+    window.addEventListener('resize', () => {
+      updateCarousel();
+    });
+
+    // Section animations
+    document.querySelectorAll('.ehc-section').forEach((section, index) => {
+      gsap.from(section.querySelector('.ehc-section-title'), {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        scrollTrigger: {
+          trigger: section,
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse"
+        }
+      });
+
+      gsap.from(section.querySelector('.ehc-section-description'), {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        delay: 0.2,
+        scrollTrigger: {
+          trigger: section,
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse"
+        }
+      });
+    });
+  </script>
+  <script>
+    /* for navigation */
+    const navItems = document.querySelectorAll('.nav-slider-item');
+    const slider = document.querySelector('.slider');
+    let activeIndex = 0;
+    document.querySelectorAll('.nav-slider-item').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = e.target.getAttribute('href');
+        gsap.to(window, {
+          duration: 1,
+          scrollTo: targetId,
+          ease: "power2.inOut"
+        });
+      });
+    });
+    function initSlider() {
+      const activeItem = navItems[0];
+      gsap.set(slider, {
+        width: 500,
+        x: 0
+      });
+    }
+
+    navItems.forEach((item, index) => {
+      item.addEventListener('click', () => {
+        if (activeIndex !== index) {
+          updateNavigation(index);
+        }
+      });
+    });
+
+    function updateNavigation(newIndex) {
+      navItems[activeIndex].classList.remove('active');
+      navItems[newIndex].classList.add('active');
+
+      gsap.to(slider, {
+        x: navItems[newIndex].offsetLeft,
+        width: navItems[newIndex].offsetWidth + 20,
+        duration: 0.5,
+        ease: "power2.out"
+      });
+
+      activeIndex = newIndex;
+    }
+
+    window.addEventListener('load', initSlider);
+
+    window.addEventListener('resize', () => {
+      gsap.set(slider, {
+        x: navItems[activeIndex].offsetLeft,
+        width: navItems[activeIndex].offsetWidth
+      });
+    });
+  </script>
+</body>
+
+</html>

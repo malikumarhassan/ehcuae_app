@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ehcuae">
+
+  <title>Ehcuae</title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="assets/imgs/logo/ehc-Black-3D.png">
+
+
+
+
+
+
+  <!-- All CSS files -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/progressbar.css">
+  <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/master-blog-details.css">
+  <link rel="stylesheet" href="assets/css/left-fixed-header.css">
+
+
+</head>
+
+
+<body class="font-heading-beatricetrial-regular-2 dark">
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="container" class="container-preloader">
+      <div class="animation-preloader">
+        <!-- <div class="spinner"></div> -->
+        <img src="assets/gif/simple-logo-loader.gif" alt="site-logo">
+        <div class="txt-loading">
+          <!-- <span data-text="E" class="characters">E</span>
+          <span data-text="H" class="characters">H</span>
+          <span data-text="C" class="characters">C</span>
+          <span data-text="U" class="characters">U</span>
+          <span data-text="A" class="characters">A</span>
+          <span data-text="E" class="characters">E</span> -->
+        </div>
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+  </div>
+
+  <!-- Cursor Animation -->
+  <div class="cursor1"></div>
+  <div class="cursor2"></div>
+
+  <!-- Sroll to top -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+  </div>
+
+  <!-- Switcher Area Start -->
+
+  <!-- Switcher Area End -->
+
+  <!-- offcanvas start  -->
+  <div class="offcanvas-3__area">
+    <div class="offcanvas-3__inner">
+      <div class="offcanvas-3__meta-wrapper">
+        <div class="">
+          <button id="close_offcanvas" class="close-button close-offcanvas" onclick="hideCanvas3()">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="">
+          <div class="offcanvas-3__meta mb-145 d-none d-md-block">
+            <ul>
+              <li><a href="tel:+2-352698102" class="unnerline"><u>+2-352 698 102</u></a></li>
+              <li><a href="mailto:contact@me.com">contact@me.com</a></li>
+              <li><a href="">27 Division St, <br>
+                  New York, NY 10002, USA</a></li>
+            </ul>
+          </div>
+          <div class="offcanvas-3__social d-none d-md-block">
+            <p class="title">Follow Me</p>
+            <div class="offcanvas-3__social-links">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-dribbble"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-3__menu-wrapper">
+        <nav class="nav-menu offcanvas-3__menu">
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="services.html">services</a></li>
+            <li><a href="service-details.html">service details</a></li>
+            <li><a href="works.html">projects</a></li>
+            <li><a href="work-details.html">project details</a></li>
+            <li><a href="team.html">team</a></li>
+            <li><a href="team-details.html">team details</a></li>
+            <li><a href="career.html">career</a></li>
+            <li><a href="career-details.html">career details</a></li>
+            <li><a href="faq.html">faq</a></li>
+            <li><a href="404.html">404 page</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="blog-details.html">blog details</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- offcanvas end  -->
+
+
+  <!-- search modal start -->
+  <div class="modal fade" id="search-template" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="search-template" aria-hidden="true">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form action="#" class="form-search">
+            <input type="text" placeholder="Search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- search modal end -->
+
+  <!-- Sidenav area start -->
+  <!-- custom nav -->
+  <div class="custom-nav-header">
+    <!-- <img src="assets/imgs/logo/EHC-Black-trans.png" alt="Ehcuae" class="logo"> -->
+    <div class="header-icons">
+      <button class="icon-btn toggle-menu">
+        <i class="fas fa-bars"></i> <!-- Change this icon dynamically -->
+      </button>
+    </div>
+  </div>
+  <div class="menu-container">
+    <div class="top-sided-logo">
+      <img src="assets/imgs/logo/EHC-Black-trans.png" alt="site-logo">
+    </div>
+    <nav class="nav-menu">
+      <a href="home.html" class="nav-item">Home</a>
+      <a href="about.html" class="nav-item">Who We Are</a>
+      <a href="ehc-verticals.html" class="nav-item">Ehc Verticals</a>
+      <a href="blog-details.html" class="nav-item">Blogs</a>
+      <a href="news.html" class="nav-item">News</a>
+      <a href="contact.html" class="nav-item">Contact Us</a>
+    </nav>
+    <ul class="menu-social-links">
+      <li><a href="https://www.facebook.com/EHCInvestment/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+      </li>
+      <li><a href="https://www.instagram.com/ehc.investment/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </li>
+      <li><a href="https://www.linkedin.com/company/ehc-investment/" target="_blank"><i
+            class="fa-brands fa-linkedin"></i></a></li>
+    </ul>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleMenuButton = document.querySelector('.toggle-menu');
+      const menuContainer = document.querySelector('.menu-container');
+      const navItems = document.querySelectorAll('.nav-item');
+
+      // State to track whether the menu is open or closed
+      let menuOpen = false;
+
+      toggleMenuButton.addEventListener('click', () => {
+        const tl = gsap.timeline();
+
+        if (!menuOpen) {
+          // Open menu animation
+          tl.to(menuContainer, {
+            x: '0%',
+            duration: 0.5,
+            ease: 'power3.out'
+          })
+            .to(navItems, {
+              opacity: 0.5,
+              x: 0,
+              duration: 0.5,
+              stagger: 0.05,
+              ease: 'power3.out'
+            });
+          toggleMenuButton.innerHTML = `<i class="fas fa-times"></i>`; // Change to close icon
+        } else {
+          // Close menu animation
+          tl.to(navItems, {
+            opacity: 0,
+            x: -30,
+            duration: 0.5,
+            stagger: 0.05,
+            ease: 'power3.in'
+          })
+            .to(menuContainer, {
+              x: '-100%',
+              duration: 0.5,
+              ease: 'power3.in'
+            });
+          toggleMenuButton.innerHTML = `<i class="fas fa-bars"></i>`; // Change back to open icon
+        }
+
+        // Toggle the menu state
+        menuOpen = !menuOpen;
+      });
+    });
+  </script>
+  <!-- Header area end -->
+
+  <div class="has-smooth" id="has_smooth"></div>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <div class="body-wrapper body-corporate-agency">
+
+        <!-- overlay switcher close  -->
+        <div class="overlay-switcher-close"></div>
+
+        <main>
+          <section class="hero-area" id="mission">
+            <div class="image-wrapper overflow-hidden">
+              <h1 class="image-title section-title large has_fade_anim" style="z-index: 1;">Blogs</h1>
+            </div>
+          </section>
+          <!-- blog details area start  -->
+          <section class="blog-details-area">
+            <div class="container">
+              <div class="blog-details-area-inner">
+                <div class="section-header">
+                  <div class="section-title-wrapper">
+                    <div class="title-wrapper">
+                      <h1 class="section-title large has_fade_anim">EHC Pioneering a Sustainable Future
+                      </h1>
+                    </div>
+                  </div>
+                  <!-- <div class="meta-box has_fade_anim">
+                    <ul>
+                      <li>
+                        <span class="number">3,20 +</span>
+                        <p class="text">Comments</p>
+                      </li>
+                      <li>
+                        <span class="number">20,511 +</span>
+                        <p class="text">Likes</p>
+                      </li>
+                      <li>
+                        <span class="number">01</span>
+                        <p class="text">November</p>
+                      </li>
+                    </ul>
+                  </div> -->
+                </div>
+                <!-- <div class="blog-thumb overflow-hidden">
+                  <img class="w-100" data-speed="0.8" src="assets/imgs/blog/img-s-26.webp" alt="image">
+                </div> -->
+                <div class="blogdetails__wrapper">
+                  <!-- <div class="blogdetails-contentleft">
+                    <ul class="blogdetails-overview dark-overview has_fade_anim" data-fade-from="left">
+                      <li><a href="https://www.facebook.com/EHCInvestment/" target="_blank"><i
+                            class="fa-brands fa-facebook-f"></i></a></li>
+                      <li><a href="https://www.instagram.com/ehc.investment/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+                      <li><a href="https://www.linkedin.com/company/ehc-investment/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                  </div> -->
+
+                  <div class="blogdetails-contentright">
+
+                    <article class="blog-details-fullBody">
+                      <div class="text-wrapper">
+                        <p class="text has_fade_anim">The UAE has long been a global leader in energy innovation,
+                          balancing its status as a major oil producer with its commitment to renewable energy and
+                          sustainability. EHC’s investment strategy is deeply aligned with the UAE’s vision to diversify
+                          its energy sources, reduce carbon emissions, and embrace cleaner alternatives.</p>
+                      </div>
+                      <!-- <div class="thumb overflow-hidden has_fade_anim">
+                        <img class="w-100" data-speed="0.8" src="assets/imgs/blog/img-s-27.webp" alt="image">
+                      </div> -->
+                      <div class="content-block">
+                        <h2 class="content-title has_fade_anim">UAE Energy Milestones</h2>
+                        <div class="text-wrapper">
+                          <p class="text has_fade_anim">The UAE’s Energy Strategy 2050 targets increasing the share of
+                            clean energy in the total energy mix to 50%. Clean gas alternatives are pivotal to achieving
+                            this goal. EHC’s subsidiaries, especially Al Fanar Gas, play a vital role in supporting this
+                            vision.</p>
+                        </div>
+                      </div>
+                      <div class="content-block">
+                        <h2 class="content-title has_fade_anim">Waste Gas to Energy Economy</h2>
+                        <div class="text-wrapper">
+                          <p class="text has_fade_anim">The growing energy demand driven by the expansion of data
+                            centers and AI technologies presents both challenges and opportunities. Waste and untapped
+                            gases, such as flared gas and methane from landfills or stranded gases or even natural
+                            gases, can provide a significant and underutilized energy source. By capturing and
+                            converting these gases into usable energy, EHC aims to leverage its expertise to oversee
+                            opportunities in such demand, while supporting key sectors in UAE and the region to reducing
+                            their environmental impacts</p>
+                          <p class="text has_fade_anim">In EHC and collaboration with Holders Investment, NexGen is
+                            leading the way in harnessing this potential. The company specializes in converting waste
+                            gases into electricity, which can power digital infrastructure like data centers, crypto
+                            mining facilities and AI operations. This approach not only addresses energy needs but also
+                            supports the UAE's sustainability goals by reducing carbon emissions.</p>
+                          <p class="text has_fade_anim">Always ready to push the boundaries, especially when it comes to
+                            Through its innovative solutions, NexGen will play a crucial role in meeting the vision of
+                            the EHC while contributing to the company value and growth.</p>
+                        </div>
+                      </div>
+                      <div class="content-block">
+                        <h2 class="content-title has_fade_anim">Digitizing Energy Infrastructure</h2>
+                        <div class="text-wrapper">
+                          <p class="text has_fade_anim">EHC’s technology arm, ISI, is integrating IoT, artificial
+                            intelligence (AI) into energy operations. AI-driven predictive maintenance and smart energy
+                            grids and metering are just a few examples of how ISI is revolutionizing energy efficiency
+                            and reliability in the UAE.</p>
+                        </div>
+                      </div>
+                      <div class="content-block">
+                        <h2 class="content-title has_fade_anim">Looking Ahead</h2>
+                        <div class="text-wrapper">
+                          <p class="text has_fade_anim">EHC is dedicated to leading the UAE’s energy transition by
+                            leveraging its expertise and investments to create a more sustainable and resilient energy
+                            future. We warmly invite you to connect with us and be part of this journey.
+                          </p>
+                        </div>
+                      </div>
+                      <!-- <div class="details-service has_fade_anim">
+                        <ul>
+                          <li><span>+</span>Brand Development</li>
+                          <li><span>+</span>UX/UI Design</li>
+                          <li><span>+</span>Front-end Development</li>
+                          <li><span>+</span>Copywriting</li>
+                          <li><span>+</span>Shopify Development</li>
+                        </ul>
+                      </div>
+                      <div class="content-block">
+                        <h2 class="content-title has_fade_anim">WorkFrame</h2>
+                        <div class="text-wrapper">
+                          <p class="text has_fade_anim">Just like other pseudo-elements and pseudo-class selectors,
+                            :not() can be
+                            chained with other pseudon classes and pseudo-elements. For example, the following will add
+                            a “New!” word to list items that do not have a .old class name, using the ::after
+                            pseudo-element:</p>
+                        </div>
+                      </div>
+                      <div class="tagswrap has_fade_anim">
+                        <ul class="tags">
+                          <li><span>Tags:</span></li>
+                          <li><a href="#">design,</a></li>
+                          <li><a href="#">figma,</a></li>
+                          <li><a href="#">update</a></li>
+                        </ul>
+                      </div> -->
+                    </article>
+
+
+                    <!-- <div class="commentform section-spacing-top has_fade_anim">
+                      <h2 class="section-title has_fade_anim">Write a comment</h2>
+
+                      <div class="contact-wrap">
+                        <form action="#">
+                          <div class="contact-formwrap">
+                            <div class="contact-formfield">
+                              <input type="text" name="Name" id="Name" placeholder="Name*">
+                            </div>
+                            <div class="contact-formfield">
+                              <input type="text" name="Email" id="Email" placeholder="Email*">
+                            </div>
+                            <div class="contact-formfield">
+                              <input type="text" name="Phone" id="Phone" placeholder="Phone">
+                            </div>
+                            <div class="contact-formfield">
+                              <input type="text" name="Subject" id="Subject" placeholder="Subject*">
+                            </div>
+                            <div class="contact-formfield messages">
+                              <input type="text" name="Messages" id="Messages" placeholder="Messages*">
+                            </div>
+                          </div>
+                          <div class="submit-btn">
+                            <button type="submit" class="wc-btn wc-btn-primary btn-text-flip"><span
+                                data-text="Submit Comment">Submit Comment</span></button>
+                          </div>
+                        </form>
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- blog details area end  -->
+
+          <!-- blog area start  -->
+          <!-- <section class="blog-area">
+            <div class="container">
+              <div class="blog-area-inner section-spacing">
+                <div class="section-content">
+                  <div class="section-title-wrapper">
+                    <div class="title-wrapper">
+                      <h2 class="section-title has_fade_anim">Related articles</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="blogs-wrapper-box">
+                  <div class="blogs-wrapper has_fade_anim">
+                    <a href="blog-details.html">
+                      <div class="blog-box">
+                        <div class="thumb">
+                          <img src="assets/imgs/blog/img-s-20.webp" alt="image">
+                        </div>
+                        <div class="content">
+                          <span class="number">01</span>
+                          <h3 class="title">Business <br>
+                            consultation</h3>
+                          <span class="icon"><i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="blog-details.html">
+                      <div class="blog-box">
+                        <div class="thumb">
+                          <img src="assets/imgs/blog/img-s-21.webp" alt="image">
+                        </div>
+                        <div class="content">
+                          <span class="number">02</span>
+                          <h3 class="title">Market research <br>
+                            & strategy</h3>
+                          <span class="icon"><i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="blog-details.html">
+                      <div class="blog-box">
+                        <div class="thumb">
+                          <img src="assets/imgs/blog/img-s-22.webp" alt="image">
+                        </div>
+                        <div class="content">
+                          <span class="number">03</span>
+                          <h3 class="title">Building quality <br>
+                            sustainable</h3>
+                          <span class="icon"><i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section> -->
+          <!-- blog area end  -->
+
+        </main>
+
+        <!-- footer area start  -->
+        <div class="container-fluid p-0" style="position: relative;">
+          <footer class="footer-area">
+            <div class="container">
+              <div class="footer-area-inner">
+                <div class="footer-widget-wrapper">
+                  <div class="footer-logo">
+                    <a href="home.html"><img src="assets/imgs/logo/EHC-Black-trans.png" width="400" alt="site-logo"></a>
+                  </div>
+                  <p class="info-text">Enterprise Holding Company </p>
+                  <ul class="social-links">
+                    <li><a href="https://www.facebook.com/EHCInvestment/" target="_blank"><i
+                          class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/ehc.investment/" target="_blank"><i
+                          class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/ehc-investment/" target="_blank"><i
+                          class="fa-brands fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+
+                <div class="footer-widget-wrapper">
+                  <h2 class="title">Company</h2>
+                  <ul class="footer-nav-list">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="ehc-verticals.html">EHC Verticals</a></li>
+                  </ul>
+                </div>
+                <div class="footer-widget-wrapper">
+                  <h2 class="title">Insights</h2>
+                  <ul class="footer-nav-list">
+                    <li><a href="blog-details.html">Blogs</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="footer-widget-wrapper newsletter">
+                  <h2 class="title">Get in touch</h2>
+                  <div class="newsletter-text">
+                    <p class="text">Feel free to reach out if you want to collaborate with us, or simply have a chat.
+                    </p>
+                  </div>
+                  <spanaction="#" class="subscribe-form">info@ehcuae.com
+                    </span>
+                </div>
+                <!-- <div class="side-mounted-image" style="right:-98px;position: absolute;top: 1px;opacity: 0.2;">
+                  <img src="assets/imgs/gallery/3d-logo-with-bubbles.png" alt="">
+                </div> -->
+              </div>
+              <div class="footer-area-inner mobile">
+                <div class="footer-widget-wrapper">
+                  <div class="footer-logo">
+                    <a href="home.html"><img src="assets/imgs/logo/EHC-Black-trans.png" width="400" alt="site-logo"></a>
+                  </div>
+                  <p class="info-text">Enterprise Holding Company </p>
+                  <ul class="social-links">
+                    <li><a href="https://www.facebook.com/EHCInvestment/" target="_blank"><i
+                          class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/ehc.investment/" target="_blank"><i
+                          class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/ehc-investment/" target="_blank"><i
+                          class="fa-brands fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+                <div style="display: flex;flex-direction: row; justify-content: space-between;margin: 50px 0px;">
+
+                  <div class="footer-widget-wrapper">
+                    <h2 class="title">Company</h2>
+                    <ul class="footer-nav-list">
+                      <li><a href="home.html">Home</a></li>
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="ehc-verticals.html">EHC Verticals</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-widget-wrapper">
+                    <h2 class="title">Insights</h2>
+                    <ul class="footer-nav-list">
+                      <li><a href="blog-details.html">Blogs</a></li>
+                      <li><a href="news.html">News</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer-widget-wrapper newsletter">
+                  <h2 class="title">Get in touch</h2>
+                  <div class="newsletter-text">
+                    <p class="text">Feel free to reach out if you want to collaborate with us, or simply have a chat.
+                    </p>
+                    <span>info@ehcuae.com</span>
+                  </div>
+                  <form action="#" class="subscribe-form">
+                    <p></p>
+                  </form>
+                </div>
+                <!-- <div class="side-mounted-image" style="right:-98px;position: absolute;top: 1px;opacity: 0.2;">
+                  <img src="assets/imgs/gallery/3d-logo-with-bubbles.png" alt="">
+                </div> -->
+              </div>
+              <div class="copyright-area">
+                <div class="container">
+                  <div class="copyright-area-inner">
+                    <div class="copyright-text">
+                      <p class="text">© 2024-25 <a href="home.html" target="_blank">Ehcuae</a>
+                        company</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <!-- footer area end  -->
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- All JS files -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/progressbar.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollSmoother.min.js"></script>
+  <script src="assets/js/ScrollToPlugin.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/SplitText.min.js"></script>
+  <script src="assets/js/jquery.meanmenu.min.js"></script>
+  <script src="assets/js/backToTop.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/error-handling.js"></script>
+  <script src="assets/js/offcanvas.js"></script>
+
+  <script>
+
+    // testimonial slider
+    if (('.testimonial-slider').length) {
+      var testimonial_slider = new Swiper(".testimonial-slider", {
+        loop: false,
+        slidesPerView: 1,
+        spaceBetween: 60,
+        speed: 1800,
+        watchSlidesProgress: true,
+        navigation: {
+          prevEl: ".testimonial-button-prev",
+          nextEl: ".testimonial-button-next",
+        },
+      });
+    }
+
+
+    // client slider 
+    if ('.client-slider-active') {
+      var client_slider_active = new Swiper(".client-slider-active", {
+        slidesPerView: 'auto',
+        loop: true,
+        autoplay: true,
+        spaceBetween: 130,
+        speed: 3000,
+        autoplay: {
+          delay: 1,
+        },
+      });
+    }
+
+  </script>
+
+</body>
+
+</html>

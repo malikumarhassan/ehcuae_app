@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ehcuae">
+
+  <title>Ehcuae</title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="assets/imgs/logo/ehc-Black-3D.png">
+
+
+
+
+
+  <!-- All CSS files -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/progressbar.css">
+  <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/master-team.css">
+  <link rel="stylesheet" href="assets/css/left-fixed-header.css">
+
+</head>
+
+
+<body class="font-heading-beatricetrial-regular-2 dark">
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="container" class="container-preloader">
+      <div class="animation-preloader">
+        <!-- <div class="spinner"></div> -->
+        <img src="assets/gif/simple-logo-loader.gif" alt="site-logo">
+        <div class="txt-loading">
+          <!-- <span data-text="E" class="characters">E</span>
+          <span data-text="H" class="characters">H</span>
+          <span data-text="C" class="characters">C</span>
+          <span data-text="U" class="characters">U</span>
+          <span data-text="A" class="characters">A</span>
+          <span data-text="E" class="characters">E</span> -->
+        </div>
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+  </div>
+  <!-- Cursor Animation -->
+  <div class="cursor1"></div>
+  <div class="cursor2"></div>
+
+  <!-- Sroll to top -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+  </div>
+
+  <!-- Switcher Area Start -->
+  <div class="switcher__area">
+    <div class="switcher__icon">
+      <button id="switcher_open"><i class="fa-solid fa-gear"></i></button>
+      <button id="switcher_close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="switcher__items">
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">mode</p>
+        </div>
+        <div class="switcher__btn mode-type wc-col-2">
+          <button data-mode="light">light</button>
+          <button class="active" data-mode="dark">dark</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- Switcher Area End -->
+  <!-- offcanvas start  -->
+  <div class="offcanvas-3__area">
+    <div class="offcanvas-3__inner">
+      <div class="offcanvas-3__meta-wrapper">
+        <div class="">
+          <button id="close_offcanvas" class="close-button close-offcanvas" onclick="hideCanvas3()">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="">
+          <div class="offcanvas-3__meta mb-145 d-none d-md-block">
+            <ul>
+              <li><a href="tel:+2-352698102" class="unnerline"><u>+2-352 698 102</u></a></li>
+              <li><a href="mailto:contact@me.com">contact@me.com</a></li>
+              <li><a href="">27 Division St, <br>
+                  New York, NY 10002, USA</a></li>
+            </ul>
+          </div>
+          <div class="offcanvas-3__social d-none d-md-block">
+            <p class="title">Follow Me</p>
+            <div class="offcanvas-3__social-links">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-dribbble"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-3__menu-wrapper">
+        <nav class="nav-menu offcanvas-3__menu">
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="services.html">services</a></li>
+            <li><a href="service-details.html">service details</a></li>
+            <li><a href="works.html">projects</a></li>
+            <li><a href="work-details.html">project details</a></li>
+            <li><a href="team.html">team</a></li>
+            <li><a href="team-details.html">team details</a></li>
+            <li><a href="career.html">career</a></li>
+            <li><a href="career-details.html">career details</a></li>
+            <li><a href="faq.html">faq</a></li>
+            <li><a href="404.html">404 page</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="blog-details.html">blog details</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- offcanvas end  -->
+
+
+  <!-- search modal start -->
+  <div class="modal fade" id="search-template" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="search-template" aria-hidden="true">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form action="#" class="form-search">
+            <input type="text" placeholder="Search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- search modal end -->
+
+  <!-- Header area start -->
+  <nav class="sidebar">
+    <div class="sidebar-wrapper">
+
+      <div class="sidebar-opt">
+        <div id="menu-items"></div>
+      </div>
+      <div class="sidebar-toggle-btn">
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menuItems = document.querySelector('#menu-items');
+    const sidebar = document.querySelector('.sidebar');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('open');
+      sidebar.classList.toggle('open');
+
+      if (sidebar.classList.contains('open')) {
+        menuItems.innerHTML = `
+      <div class="menu-content">
+        <div class="menu-left">
+          <img src="assets/imgs/logo/EHC-Black-trans.png" alt="Ehcuae" class="logo">
+          <ul class="main-menu">
+            <li class="main-menu-item" data-link="home.html">Home</li>
+            <li class="main-menu-item" data-menu="about">About Us</li>
+            <li class="main-menu-item" data-menu="sectors">Business Units</li>
+            <li class="main-menu-item" data-link="contact.html" >Contact Us</li>
+
+            <li class="main-menu-item">Blogs</li>
+            <li class="main-menu-item" data-link="news.html">News</li>
+          </ul>
+        </div>
+        <div class="menu-right">
+          <ul class="sub-menu" id="sectors">
+            <li class="sub-menu-item" data-content="energy">Energy</li>
+            <li class="sub-menu-item" data-content="infra">Infrastructure</li>
+            <li class="sub-menu-item" data-content="safety">Safety</li>
+            <li class="sub-menu-item" data-content="tech">Technology</li>
+          </ul>
+          <ul class="sub-menu" id="about">
+            <li class="sub-menu-item" data-content="who">Who we are</li>
+            <li class="sub-menu-item" data-content="mission">Mission and vision</li>
+            <li class="sub-menu-item" data-content="leader">Leader ship</li>
+            <li class="sub-menu-item" data-content="manageing">Manageing director and group cheif</li>
+                        <li class="sub-menu-item" data-content="ourTeam">Our team</li>                 
+                       <li class="sub-menu-item" data-content="journey">Journey</li>
+
+          </ul>
+          <div class="content-description">
+            <h2>Energy</h2>
+            <p>Managing a broad portfolio of assets operating in key sectors...</p>
+          </div>
+        </div>
+        <div class="sub-menu-details">
+            <div id="sideimage" class="right-detail-image"></div>
+        </div>
+      </div>`;
+
+        initializeMenu(); // Initialize after adding dynamic HTML
+      } else {
+        menuItems.innerHTML = ''; // Clear menu content on close
+      }
+    });
+
+    function initializeMenu() {
+      const mainMenuItems = document.querySelectorAll('.main-menu-item');
+      const subMenuItems = document.querySelectorAll('.sub-menu-item');
+      const contentDescription = document.querySelector('.content-description');
+      const sideImage = document.querySelector('#sideimage');
+
+      const content = {
+        energy: {
+          title: 'Energy',
+          description: 'Delivering sustainable and innovative energy solutions for a greener future.',
+          img: 'assets/imgs/gallery/energy_sector_sample.jpg',
+          link: 'energy-details.html'
+        },
+        infra: {
+          title: 'Infrastructure',
+          description: 'Creating resilient and sustainable infrastructure with precision and expertise.',
+          img: 'assets/imgs/gallery/infra_sector_sample.jpg',
+          link: 'infrastructure-details.html'
+        },
+        safety: {
+          title: 'Safety',
+          description: 'Prioritizing safety, ensuring secure environments across sectors.',
+          img: 'assets/imgs/gallery/service_sector_sample.jpg',
+          link: 'safety-details.html'
+        },
+        tech: {
+          title: 'Technology',
+          description: 'Empowering businesses with digital tools and effective transformation.',
+          img: 'assets/imgs/gallery/tech_sector_sample.jpg',
+          link: 'technology-details.html'
+        },
+        who: {
+          title: 'Who we are',
+          description: 'Delivering sustainable and innovative energy solutions for a greener future.',
+          img: 'assets/imgs/gallery/energy_sector_sample.jpg',
+          link: 'about.html'
+        },
+        mission: {
+          title: 'Mission and vision',
+          description: 'Creating resilient and sustainable infrastructure with precision and expertise.',
+          img: 'assets/imgs/gallery/infra_sector_sample.jpg',
+          link: 'about.html'
+        },
+        leader: {
+          title: 'Leader ship',
+          description: 'Prioritizing safety, ensuring secure environments across sectors.',
+          img: 'assets/imgs/gallery/service_sector_sample.jpg',
+          link: 'about.html'
+        },
+        manageing: {
+          title: 'Manageing director and group cheif',
+          description: 'Empowering businesses with digital tools and effective transformation.',
+          img: 'assets/imgs/gallery/tech_sector_sample.jpg',
+          link: 'about.html'
+        },
+        journey: {
+          title: 'Journey',
+          description: 'Empowering businesses with digital tools and effective transformation.',
+          img: 'assets/imgs/gallery/tech_sector_sample.jpg',
+          link: 'about.html'
+        }
+      };
+
+      // Handle main menu item click
+      mainMenuItems.forEach(item => {
+        item.addEventListener('click', () => {
+          mainMenuItems.forEach(i => i.classList.remove('active'));
+          item.classList.add('active');
+
+          // Display corresponding submenu
+          const menuId = item.dataset.menu;
+          if (item.dataset.link) {
+            location.href = item.dataset.link;
+            return;
+          }
+          document.querySelectorAll('.sub-menu').forEach(menu => menu.classList.remove('active'));
+          document.getElementById(menuId)?.classList.add('active');
+        });
+      });
+
+      // Handle submenu item hover
+      subMenuItems.forEach(item => {
+        item.addEventListener('mouseenter', () => {
+          const { title, description, img } = content[item.dataset.content];
+          contentDescription.querySelector('h2').textContent = title;
+          contentDescription.querySelector('p').textContent = description;
+          sideImage.innerHTML = `<img src="${img}" alt="${title}" width="1200" class="right-detail-image">`;
+          contentDescription.classList.add('active');
+        });
+
+        // Leave to hide content unless clicked
+        item.addEventListener('mouseleave', () => {
+          if (!item.classList.contains('active')) {
+            clearContent();
+          }
+        });
+
+        // Click to persist content
+        item.addEventListener('click', () => {
+         window.location.href = content[item.dataset.content].link + '#' + item.dataset.content;
+          // subMenuItems.forEach(i => i.classList.remove('active'));
+          // item.classList.add('active');
+          // const { title, description, img } = content[item.dataset.content];
+          // contentDescription.querySelector('h2').textContent = title;
+          // contentDescription.querySelector('p').textContent = description;
+          // sideImage.innerHTML = `<img src="${img}" alt="${title}" width="1200" class="right-detail-image">`;
+          // contentDescription.classList.add('active');
+        });
+      });
+
+      function clearContent() {
+        contentDescription.querySelector('h2').textContent = '';
+        contentDescription.querySelector('p').textContent = '';
+        sideImage.innerHTML = '';
+        contentDescription.classList.remove('active');
+      }
+    }
+
+  </script>
+
+
+  <!-- Header area end -->
+
+  <div class="has-smooth" id="has_smooth"></div>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <div class="body-wrapper body-corporate-agency">
+
+        <!-- overlay switcher close  -->
+        <div class="overlay-switcher-close"></div>
+
+        <main>
+
+          <!-- hero area start  -->
+          <section class="hero-area">
+            <div class="container large">
+              <div class="hero-area-inner">
+                <div class="section-content">
+                  <div class="btn-wrapper has_fade_anim" data-fade-from="left">
+                    <a href="contact.html" class="wc-btn wc-btn-underline">Want to our serve global
+                      audiences and take your
+                      career next level?<i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  <div class="content-last">
+                    <div class="section-title-wrapper">
+                      <div class="title-wrapper">
+                        <h1 class="section-title large has_text_move_anim">Work together for
+                          success.</h1>
+                      </div>
+                    </div>
+                    <div class="text-wrapper">
+                      <p class="text has_fade_anim" data-fade-from="left">Arolax is a beacon of best innovation and the
+                        dynamic parent a company of
+                        wealcoder and many other subsidiaries.</p>
+                    </div>
+                    <div class="fun-fact has_fade_anim" data-fade-from="bottom">
+                      <span class="number wc-counter">4,000 +</span>
+                      <p class="text">Happy Clients</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="image-wrapper">
+            <div class="container large">
+              <div class="p-relative">
+                <div class="experience has_fade_anim" data-fade-from="top" data-ease="bounce">
+                  <h2 class="number wc-counter">99+</h2>
+                  <h2 class="text">Expertise <br>
+                    employees</h2>
+                </div>
+              </div>
+            </div>
+            <img class="w-100 has_fade_anim" data-on-scroll="0" src="assets/imgs/gallery/img-s-104.webp" alt="image">
+          </div>
+          <!-- hero area end  -->
+
+          <!-- team area start  -->
+          <section class="team-area">
+            <div class="container">
+              <div class="team-area-inner section-spacing">
+                <div class="section-header">
+                  <div class="section-title-wrapper">
+                    <div class="title-wrapper">
+                      <h2 class="section-title has_text_move_anim">Bringing passion and our expertise together!</h2>
+                    </div>
+                  </div>
+                  <div class="text-wrapper">
+                    <p class="text has_fade_anim">We bet on brands that shift categories and add value to people's
+                      lives; and on
+                      founders who are motivated to shape 
+                    </p>
+                  </div>
+                </div>
+                <div class="team-wrapper-box">
+                  <div class="team-wrapper">
+                    <div class="team-box has_fade_anim" data-delay="0.15">
+                      <a href="team-details.html">
+                        <div class="thumb">
+                          <img src="assets/imgs/team/img-s-1.webp" alt="team icon">
+                        </div>
+                        <div class="content">
+                          <h3 class="title">Kamal Abraham</h3>
+                          <p class="text">CEO, Wealcoder</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="team-box has_fade_anim" data-delay="0.30">
+                      <a href="team-details.html">
+                        <div class="thumb">
+                          <img src="assets/imgs/team/img-s-2.webp" alt="team icon">
+                        </div>
+                        <div class="content">
+                          <h3 class="title">Selina Gomaze</h3>
+                          <p class="text">Junior Executive</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="team-box has_fade_anim" data-delay="0.45">
+                      <a href="team-details.html">
+                        <div class="thumb">
+                          <img src="assets/imgs/team/img-s-3.webp" alt="team icon">
+                        </div>
+                        <div class="content">
+                          <h3 class="title">Pedrik Vadra</h3>
+                          <p class="text">Sr. Developer</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="team-box has_fade_anim" data-delay="0.60">
+                      <a href="team-details.html">
+                        <div class="thumb">
+                          <img src="assets/imgs/team/img-s-4.webp" alt="team icon">
+                        </div>
+                        <div class="content">
+                          <h3 class="title">Thomas Ribbon</h3>
+                          <p class="text">UX Designer</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="team-box has_fade_anim" data-delay="0.15">
+                      <a href="team-details.html">
+                        <div class="thumb">
+                          <img src="assets/imgs/team/img-s-30.webp" alt="team icon">
+                        </div>
+                        <div class="content">
+                          <h3 class="title">Burak Özçivit</h3>
+                          <p class="text">CEO, Wealcoder</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="team-box has_fade_anim" data-delay="0.30">
+                      <a href="team-details.html">
+                        <div class="thumb">
+                          <img src="assets/imgs/team/img-s-31.webp" alt="team icon">
+                        </div>
+                        <div class="content">
+                          <h3 class="title">Oliver Kugar</h3>
+                          <p class="text">Junior Executive</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="team-box has_fade_anim" data-delay="0.45">
+                      <a href="team-details.html">
+                        <div class="thumb">
+                          <img src="assets/imgs/team/img-s-32.webp" alt="team icon">
+                        </div>
+                        <div class="content">
+                          <h3 class="title">Çelik Bodağ</h3>
+                          <p class="text">Sr. Developer</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="team-box has_fade_anim" data-delay="0.60">
+                      <a href="team-details.html">
+                        <div class="thumb">
+                          <img src="assets/imgs/team/img-s-33.webp" alt="team icon">
+                        </div>
+                        <div class="content">
+                          <h3 class="title">Özge Yağız</h3>
+                          <p class="text">UX Designer</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- team area end  -->
+
+
+          <!-- counter area start  -->
+          <div class="counter-area">
+            <div class="counter-area-inner">
+              <div class="thumb">
+                <img src="assets/imgs/gallery/img-s-27.webp" alt="image">
+              </div>
+              <div class="counter-wrapper-box">
+                <div class="counter-wrapper">
+                  <div class="thumb overflow-hidden">
+                    <img src="assets/imgs/gallery/img-s-28.webp" data-speed="0.9" alt="image">
+                  </div>
+                  <div class="counter-box">
+                    <h2 class="text has_fade_anim">We have 100+ <br>
+                      satisfied clients</h2>
+                    <h2 class="number wc-counter has_fade_anim">100+</h2>
+                  </div>
+                  <div class="counter-box dark">
+                    <h2 class="text has_fade_anim">We helped to get <br>
+                      companies with $25M+ <br>
+                      funding</h2>
+                    <h2 class="number wc-counter has_fade_anim">25M+</h2>
+                  </div>
+                  <div class="thumb overflow-hidden">
+                    <img src="assets/imgs/gallery/img-s-29.webp" data-speed="0.9" alt="image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- counter area end  -->
+
+          <!-- community area start  -->
+          <section class="community-area">
+            <div class="container">
+              <div class="community-area-inner section-spacing">
+                <div class="section-content">
+                  <div class="section-title-wrapper">
+                    <div class="title-wrapper">
+                      <h2 class="section-title has_fade_anim">Future . Community . Honor </h2>
+                    </div>
+                  </div>
+                  <div class="text-wrapper">
+                    <p class="text has_fade_anim">What sets us apart is what brings us together – a shared passion for
+                      solving
+                      business challenges through strategy, design, and engineering. We are the sum total of our team,
+                      their unique perspectives, capabilities, and our ability to collaborate from ideation to
+                      deployment.</p>
+                  </div>
+                  <div class="gallery-wrapper-box">
+                    <div class="gallery-wrapper has_fade_anim">
+                      <div class="">
+                        <div class="thumb">
+                          <img src="assets/imgs/gallery/img-s-94.webp" alt="image">
+                        </div>
+                      </div>
+                      <div class="">
+                        <div class="thumb">
+                          <img src="assets/imgs/gallery/img-s-95.webp" alt="image">
+                        </div>
+                      </div>
+                      <div class="">
+                        <div class="thumb">
+                          <img src="assets/imgs/gallery/img-s-96.webp" alt="image">
+                        </div>
+                        <div class="thumb">
+                          <img src="assets/imgs/gallery/img-s-97.webp" alt="image">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- community area end  -->
+
+        </main>
+
+        <!-- footer area start  -->
+        <div class="container-fluid p-0" style="position: relative;">
+          <footer class="footer-area">
+            <div class="container">
+              <div class="footer-area-inner">
+                <div class="footer-widget-wrapper">
+                  <div class="footer-logo">
+                    <a href="home.html"><img src="assets/imgs/logo/EHC-Black-trans.png" width="400" alt="site-logo"></a>
+                  </div>
+                  <p class="info-text">Enterprise Holding Company  </p>
+                  <ul class="social-links">
+ <li><a href="https://www.facebook.com/EHCInvestment/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/ehc.investment/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/ehc-investment/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              
+                <div class="footer-widget-wrapper">
+                  <h2 class="title">Company</h2>
+                  <ul class="footer-nav-list">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="ehc-verticals.html">EHC Verticals</a></li>
+                  </ul>
+                </div>
+   <div class="footer-widget-wrapper">
+                  <h2 class="title">Insights</h2>
+                  <ul class="footer-nav-list">
+                    <li><a href="blog-details.html">Blogs</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="footer-widget-wrapper newsletter">
+                  <h2 class="title">Get in touch</h2>
+                  <div class="newsletter-text">
+                    <p class="text">Feel free to reach out if you want to collaborate with us, or simply have a chat.
+                    </p>
+                  </div>
+           <spanaction="#" class="subscribe-form">info@ehcuae.com
+                  </span>
+                </div>
+                      <!-- <div class="side-mounted-image" style="right:-98px;position: absolute;top: 1px;opacity: 0.2;">
+                  <img src="assets/imgs/gallery/3d-logo-with-bubbles.png" alt="">
+                </div> -->
+              </div>
+              <div class="copyright-area">
+                <div class="container">
+                  <div class="copyright-area-inner">
+                    <div class="copyright-text">
+                      <p class="text">© 2024-25 <a href="home.html" target="_blank">Ehcuae</a>
+                        company</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <!-- footer area end  -->
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- All JS files -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/progressbar.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollSmoother.min.js"></script>
+  <script src="assets/js/ScrollToPlugin.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/SplitText.min.js"></script>
+  <script src="assets/js/jquery.meanmenu.min.js"></script>
+  <script src="assets/js/backToTop.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/error-handling.js"></script>
+  <script src="assets/js/offcanvas.js"></script>
+
+  <script>
+
+    // testimonial slider
+    if (('.testimonial-slider').length) {
+      var testimonial_slider = new Swiper(".testimonial-slider", {
+        loop: false,
+        slidesPerView: 1,
+        spaceBetween: 60,
+        speed: 1800,
+        watchSlidesProgress: true,
+        navigation: {
+          prevEl: ".testimonial-button-prev",
+          nextEl: ".testimonial-button-next",
+        },
+      });
+    }
+
+
+    // client slider 
+    if ('.client-slider-active') {
+      var client_slider_active = new Swiper(".client-slider-active", {
+        slidesPerView: 'auto',
+        loop: true,
+        autoplay: true,
+        spaceBetween: 130,
+        speed: 3000,
+        autoplay: {
+          delay: 1,
+        },
+      });
+    }
+
+  </script>
+
+</body>
+
+</html>

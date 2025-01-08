@@ -1,0 +1,449 @@
+.map-body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    /* font-family: Arial, sans-serif; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    /* height: 80vh; */
+    /* overflow: hidden; */
+    /* margin-top: -270px; */
+    /* max-width: 1400px; */
+    /* box-shadow: inset 1px 5px 20px 20px #303030; */
+}
+
+.marker.uae-marker {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    right: 62rem;
+    z-index: 111;
+    width: 25px;
+    height: 25px;
+    bottom: 23rem;
+    border-radius: 25px;
+}
+
+.map-container .map-image {
+    position: relative;
+    /* background-image: url('./../imgs/gallery/custom-map.jpg'); */
+
+    height: 100vh;
+}
+
+
+.map-path {
+    /* fill: #2a9b9d; */
+    stroke: transparent;
+    stroke-width: 1;
+    opacity: 1;
+    pointer-events: none;
+
+}
+
+.location-point {
+    cursor: pointer;
+    transition: fill 0.3s ease;
+    opacity: 1;
+}
+
+.location-point:hover {
+    animation: none;
+}
+
+.bounce1 {
+    animation-delay: 5s;
+    animation: bounce 1s infinite ease-in-out;
+}
+
+.bounce2 {
+    animation-delay: 5s;
+    animation: bounce 1.2s infinite ease-in-out;
+}
+
+.bounce3 {
+    animation-delay: 5s;
+    animation: bounce 1.5s infinite ease-in-out;
+}
+
+.bounce4 {
+    animation-delay: 5s;
+    animation: bounce 1.8s infinite ease-in-out;
+}
+
+.bounce5 {
+    animation-delay: 5s;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+
+.highlight-ring {
+    fill: none;
+    stroke: rgb(42 255 0);
+    stroke-width: 8;
+    opacity: 0;
+    animation: pulse 1s infinite;
+}
+
+/* Animation for the expanding glowing ring effect */
+@keyframes pulse {
+    0% {
+        opacity: 0.5;
+        stroke-width: 8;
+    }
+
+    50% {
+        opacity: 1;
+        stroke-width: 4;
+        /* Expand the ring */
+    }
+
+    100% {
+        opacity: 0.5;
+        stroke-width: 8;
+    }
+}
+
+.location-point:hover {
+    fill: rgb(0, 0, 0);
+}
+
+.location-area {
+    fill: #2a9d8f;
+    opacity: 0.2;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.location-area:hover {
+    opacity: 0.4;
+}
+
+.country-names {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 19px 50px;
+    background: #c8c8c85e;
+    backdrop-filter: blur(7.5px);
+}
+
+.country-name {
+    color: #000000;
+    /* text-shadow: -1px 1px 20px #000000; */
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    font-weight: 700;
+}
+
+.country-name:hover {
+    opacity: 1;
+}
+
+.modal-map {
+    position: absolute;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    color: #0a0f1d;
+    display: none;
+}
+
+.modal-header-map {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.modal-title-map {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.modal-close-map {
+    cursor: pointer;
+    font-size: 20px;
+    background: none;
+    border: none;
+    padding: 5px;
+}
+
+.fact-title-map {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.fact-content-map {
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.know-more-btn-map {
+    background: #2a9d8f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.know-more-btn-map:hover {
+    background: #238579;
+}
+
+.navigation-map {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    pointer-events: none;
+}
+
+.nav-button-map {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    pointer-events: auto;
+    transition: background 0.3s ease;
+}
+
+.nav-button-map:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.country-image {
+    /* background-image: url(https://bennettfeely.com/clippy/pics/pittsburgh.jpg); */
+    /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+    border-radius: 50%;
+    background-size: cover !important;
+    background-position: center center !important;
+    width: 100px;
+    height: 100px;
+    /* transform: rotate(90deg); */
+    position: absolute;
+    top: -107px;
+    display: none;
+    transition: ease-in-out 1s;
+
+}
+
+.map-fallback {
+    display: block;
+}
+
+.world-map {}
+
+/* If SVG is supported, show the SVG and hide the fallback image */
+.svg-supported .map-fallback {
+    display: none;
+}
+
+.world-map {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.svg-supported .world-map-mobile {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+/* .world-map-mobile {
+    display: none;
+    width: 100%;
+    height: auto;
+} */
+/* Check if SVG is supported */
+
+@media screen and (max-width: 768px) {
+    .country-image {
+        /* background-image: url(https://bennettfeely.com/clippy/pics/pittsburgh.jpg); */
+        /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+        border-radius: 50%;
+        background-size: cover !important;
+        background-position: center center !important;
+        width: 100px;
+        height: 100px;
+        /* transform: rotate(90deg); */
+        position: absolute;
+        top: -107px;
+        display: none;
+        transition: ease-in-out 1s;
+
+    }
+
+    .svg-supported .world-map {
+        display: none;
+        height: 275px;
+    }
+
+    .svg-supported .world-map-mobile {
+        display: block;
+        height: 450px;
+    }
+
+    .country-name {
+        cursor: not-allowed;
+        pointer-events: none;
+        font-size: 14px;
+
+    }
+
+    .country-names {
+        padding: 1rem;
+        display: none;
+    }
+    .uae-slider-container{
+        display: block !important;
+    }
+}
+
+.country-image.active {
+    display: flex;
+}
+
+
+/* slider country name */
+
+.uae-slider-container {
+    display: none;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(63,61,62,1) 0%, rgba(63,61,63,1) 47%, rgba(61,59,60,1) 100%);
+}
+
+.uae-slider-wrapper {
+    position: relative;
+    width: 100%;
+    height: 153px;
+    overflow: hidden;
+}
+
+.uae-slider-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.uae-slider-slide.uae-slider-active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.uae-slider-triangle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;
+    /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.uae-slider-triangle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.uae-slider-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.uae-slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 35px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+    transition: color 0.3s ease;
+}
+
+.uae-slider-nav:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.uae-slider-prev {
+    left: 20px;
+}
+
+.uae-slider-next {
+    right: 20px;
+}
+
+.uae-slider-nav svg {
+    width: 30px;
+    height: 30px;
+    stroke: currentColor;
+    stroke-width: 1;
+    fill: none;
+}
+
+/* slider country name ends */
