@@ -719,7 +719,16 @@
             function clientSlider() {
               var sliderEl = document.getElementById('client-slider');
               for (let i = 0; i < 53; i++) {
-                if(i != 18){
+                if(i == 28){
+                  sliderEl.innerHTML += `
+                      <div class="swiper-slide">
+                        <div class="client-box">
+                          <img src="assets/imgs/client/logo-c-${i + 1}.png" alt="client image" style="filter: grayscale(1);">
+                        </div>
+                      </div>
+                    `;
+                }
+                if(i != 18 && i != 28){
                   
                   sliderEl.innerHTML += `
                       <div class="swiper-slide">
@@ -729,10 +738,20 @@
                       </div>
                     `;
                 }
+
               }
               var sliderElMobile = document.getElementById('client-slider-mobile');
               for (let i = 0; i < 53; i++) {
-                if(i != 18){
+                if(i == 28){
+                  sliderElMobile.innerHTML += `
+                      <div class="swiper-slide">
+                        <div class="client-box">
+                          <img src="assets/imgs/client/logo-c-${i + 1}.png" alt="client image" style="filter: grayscale(1);">
+                        </div>
+                      </div>
+                    `;
+                }
+                if(i != 18 && i != 28){
                   sliderElMobile.innerHTML += `
                       <div class="swiper-slide">
                         <div class="client-box">
