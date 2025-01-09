@@ -719,23 +719,29 @@
             function clientSlider() {
               var sliderEl = document.getElementById('client-slider');
               for (let i = 0; i < 53; i++) {
-                sliderEl.innerHTML += `
-                    <div class="swiper-slide">
-                      <div class="client-box">
-                        <img src="assets/imgs/client/logo-c-${i + 1}.png" alt="client image">
+                if(i != 18){
+                  
+                  sliderEl.innerHTML += `
+                      <div class="swiper-slide">
+                        <div class="client-box">
+                          <img src="assets/imgs/client/logo-c-${i + 1}.png" alt="client image">
+                        </div>
                       </div>
-                    </div>
-                  `;
+                    `;
+                }
               }
               var sliderElMobile = document.getElementById('client-slider-mobile');
               for (let i = 0; i < 53; i++) {
-                sliderElMobile.innerHTML += `
-                    <div class="swiper-slide">
-                      <div class="client-box">
-                        <img src="assets/imgs/client/logo-c-${i + 1}.png" alt="client image">
+                if(i != 18){
+                  sliderElMobile.innerHTML += `
+                      <div class="swiper-slide">
+                        <div class="client-box">
+                          <img src="assets/imgs/client/logo-c-${i + 1}.png" alt="client image">
+                        </div>
                       </div>
-                    </div>
-                  `;
+                    `;
+
+                }
               }
 
             }
